@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img"
+    android:padding="1dp">
+
+    <!-- Personal Information Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Information"
+        android:textSize="28sp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginTop="7dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="30dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textSize="18sp"
+
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextFullName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_edittext"
+                android:hint="Enter your full name"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:layout_marginTop="7dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="18sp"
+                android:layout_marginTop="7dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress"
+                android:hint="Enter your email"
+                android:background="@drawable/custom_edittext"
+                android:padding="12dp"
+                android:layout_marginTop="7dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone number"
+                android:textSize="18sp"
+                android:layout_marginTop="7dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ph_no"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter your number"
+                android:background="@drawable/custom_edittext"
+                android:padding="12dp"
+                android:layout_marginTop="7dp"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aadhaar number"
+                android:textSize="18sp"
+                android:layout_marginTop="7dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Aadhar_no"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter your Aadhaar number"
+                android:background="@drawable/custom_edittext"
+                android:padding="12dp"
+                android:layout_marginTop="7dp"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preferable contact Time"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                />
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="7dp">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9AM - 5PM"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5PM - 10PM"
+                    android:textSize="18sp"
+                     />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anytime"
+                    android:textSize="18sp"
+                     />
+
+            </RadioGroup>
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/yellow"
+                android:text="Submit"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@drawable/button_clicked"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
